@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    min-width: 1000px;
+    width: 100%;
+    height: 55px;
+    background: #fff;
+}
+nav{
+    position: relative;
+    margin: 0;
+    font-size: 0;
+    padding: 55px 0 0 121px;
+    background: #f8f8f8;
+    height: 38px;
+    line-height: 36px;
+    overflow: hidden;
+    z-index: 2;
+    /*background: blue;*/
+}
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    display: inline-block;
+    font-family: Arial;
+    font-size: 14px;
+    color: #555;
+    width: 54px;
+    height: 100%;
+    margin: 0;
+    border: 0;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.logo_a{
+    display: block;
+    position: absolute;
+    /*float: initial;*/
+    width: 101px;
+    height: 35px;
+    margin: 8px 10px 0;
+}
+.logo_a img{
+    top: 0;
+    width: 101px;
+    height: 32.8px;
+}
+.search{
+    width: 545px;
+    height: 34px;
+    position: absolute;
+    left: 120px;
+    top: 10px;
+}
+
+.baiduInput{
+    float: left;
+    display: inline-block;
+    width: 440px;
+    height: 34px;
+    box-sizing: border-box;
+    border: 1px solid #b8b8b8;
+    border-right: 0;
+    border-bottom: 1px solid #ccc;
+    vertical-align: top;
+    outline: 0;
+    text-indent: 8px;
+    position: relative;
+    right:  0px;
+    font: 16px/18px arial;
+    outline: 0;
+    text-indent: 7px;
+
+}
+.baiduInput:hover{
+    border-color: #999;
+}
+.baiduInput:focus{
+    border-color: #4791ff;
+}
+.baiduOne{
+    float: left;
+    width: 100px;
+    height: 34px;
+    border-left: 0;
+    padding: 0;
+    line-height: 34px;
+    font-size: 14px;
+    font-family: Arial;
+    letter-spacing: 1px;
+    background: #38f;
+    color: #fff;
+    border: 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid #2d78f4;
+    cursor: pointer;
+
+}
+.headerFont01{
+    position: absolute;
+    left: 700px;
+    top: 20px;
+    color: #333;
+    font-family: Arial;
+    text-decoration: underline;
+    font-size: 12px;
+}
+
+.topInfoBar{
+    clear: both;
+    height: 26px;
+    line-height: 26px;
+    background: #ffffff;
+    padding: 7px 10px;
+    display: block;
+    overflow: hidden;
+}
+.topInfoBar ul{
+    display: block;
+    list-style: none;
+    margin-left: 2%;
+}
+.topInfoBar ul li{
+    float: left;
+}
+.topInfoBar ul li a,.topInfoBar ul li span{
+    margin-right: 22px;
+    display: inline-block;
+    zoom: 1;
+    font-size: 13px;
+    font-family: Arial;
+    color: #0000d0;
+    text-decoration: none;
+    padding-bottom: 5px;
+    background-position: right -32px;
+}
+.searchIcon{
+    width: 16px;
+    height: 16px;
+    background: url("../img/sousuo.jpg") 0 0 no-repeat;
+    background-size: 16px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.header_right{
+    width: 244px;
+    height: 30px;
+    /*background: red;*/
+    float: right;
+}
+
+.headerFont{
+    float: left;
+    margin: 20px 7px;
+    color: #333;
+    font-family: Arial;
+    text-decoration: underline;
+    font-size: 12px;
+}
+.activation{
+    color: #333;
+    font-weight: 700;
+    border-bottom: 2px #38f solid;
+}
+.photo{
+    width:100%;
+    min-width: 1000px;
+    height: auto;
+}
+/*#container{*/
+    /*display: block;*/
+    /*overflow-y: hidden;*/
+    /*height: 500px;*/
+/*}*/
+.box{
+    position: relative;
+    float: left;
+
+}
+.content{
+    /*padding-bottom: 10px;*/
+    /*border: 1px solid #cccccc;*/
+    border: 0;
+    box-shadow: 0 0 5px #ccc;
+
+}
+.photoArea,.photoImg{
+    width: 200px;
+    height: auto;
+    display: block;
+}
+.photoSpan{
+    /*display: none;*/
+    opacity: 0;
+    width: 100%;
+    height: 30px;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9));
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    font-size: 12px;
+    text-indent: 8px;
+    line-height: 30px;
+    -moz-transition:opacity 0.5s ease;
+    -webkit-transition:opacity 0.5s ease;
+    -o-transition:opacity 0.5s ease;
+    -ms-transition:opacity 0.5s ease;
+    transition: opacity 0.5s ease;
+}
+.photoArea:hover .photoSpan{
+    opacity: 1;
+}
+.goTop{
+    width: 50px;
+    height: 50px;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: block;
+    border-radius: 50px;
+    z-index: 4;
+    cursor: pointer;
+}
+.goTop_btn{
+    opacity: 0;
+    -moz-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    transition: opacity 0.5s ease-out;
+}
+ .goTop_btn{
+    width: 34px;
+    height: 34px;
+    /*float: left;*/
+    background-size: 34px;
+    cursor: pointer;
+}
